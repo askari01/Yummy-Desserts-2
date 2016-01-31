@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		365333871C5CF6940050C39C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365333861C5CF6940050C39C /* AppDelegate.swift */; };
-		365333891C5CF6940050C39C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365333881C5CF6940050C39C /* ViewController.swift */; };
 		3653338C1C5CF6940050C39C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3653338A1C5CF6940050C39C /* Main.storyboard */; };
 		3653338E1C5CF6940050C39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3653338D1C5CF6940050C39C /* Assets.xcassets */; };
 		365333911C5CF6940050C39C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3653338F1C5CF6940050C39C /* LaunchScreen.storyboard */; };
 		3653339C1C5CF6940050C39C /* Yummy_Desserts_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653339B1C5CF6940050C39C /* Yummy_Desserts_2Tests.swift */; };
+		365333A71C5CFAC80050C39C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365333A61C5CFAC80050C39C /* Food.swift */; };
+		365333AB1C5CFB570050C39C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365333AA1C5CFB570050C39C /* TableViewController.swift */; };
+		365333AD1C5CFD890050C39C /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365333AC1C5CFD890050C39C /* myCell.swift */; };
+		365333AF1C5E8D810050C39C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365333AE1C5E8D810050C39C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,6 @@
 /* Begin PBXFileReference section */
 		365333831C5CF6940050C39C /* Yummy Desserts 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yummy Desserts 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		365333861C5CF6940050C39C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		365333881C5CF6940050C39C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3653338B1C5CF6940050C39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3653338D1C5CF6940050C39C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		365333901C5CF6940050C39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		365333971C5CF6940050C39C /* Yummy Desserts 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yummy Desserts 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3653339B1C5CF6940050C39C /* Yummy_Desserts_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yummy_Desserts_2Tests.swift; sourceTree = "<group>"; };
 		3653339D1C5CF6940050C39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365333A61C5CFAC80050C39C /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		365333AA1C5CFB570050C39C /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		365333AC1C5CFD890050C39C /* myCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
+		365333AE1C5E8D810050C39C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				365333861C5CF6940050C39C /* AppDelegate.swift */,
-				365333881C5CF6940050C39C /* ViewController.swift */,
+				365333A61C5CFAC80050C39C /* Food.swift */,
+				365333AC1C5CFD890050C39C /* myCell.swift */,
+				365333AA1C5CFB570050C39C /* TableViewController.swift */,
+				365333AE1C5E8D810050C39C /* DetailViewController.swift */,
 				3653338A1C5CF6940050C39C /* Main.storyboard */,
 				3653338D1C5CF6940050C39C /* Assets.xcassets */,
 				3653338F1C5CF6940050C39C /* LaunchScreen.storyboard */,
@@ -199,8 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				365333891C5CF6940050C39C /* ViewController.swift in Sources */,
 				365333871C5CF6940050C39C /* AppDelegate.swift in Sources */,
+				365333AD1C5CFD890050C39C /* myCell.swift in Sources */,
+				365333AF1C5E8D810050C39C /* DetailViewController.swift in Sources */,
+				365333AB1C5CFB570050C39C /* TableViewController.swift in Sources */,
+				365333A71C5CFAC80050C39C /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
